@@ -54,13 +54,23 @@ const Header = () => {
 
                     <ul className="p-4 mt-2">
                         {navbar.map((link, i) => (
-                            <li className="my-2" key={i}>{link.cat ? (
+                            <li className="my-2 hover:text-red-500" key={i}>{link.cat ? (
                                 <>
-                                    <div className="hover:text-red-500" onClick={() => toggleDropdown(i)}>
+                                    <div className="hover:text-red-500 flex items-center gap-2" onClick={() => toggleDropdown(i)}>
                                         <Link>{link.nav}</Link>
                                         <button>
                                             {dropDownMenuOpen === i ? (<IoChevronUp />) : (<IoChevronDown />)}
                                         </button>
+                                    </div>
+
+                                    <div className={`overflow-hidden transition-max-height duration-500 ease-in-out ${dropDownMenuOpen === i ? "max-h-40" : "max-h-0"}`}>
+                                        <ul>
+                                            {link.cat.map((sublink) => (
+                                                <li key={sublink.id} className="my-1">
+                                                    <Link>{sublink.name}</Link>
+                                                </li>
+                                            ))}
+                                        </ul>
                                     </div>
                                 </>
                             ) : (

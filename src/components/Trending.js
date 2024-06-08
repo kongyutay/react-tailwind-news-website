@@ -21,8 +21,8 @@ const Trending = () => {
                 <h1 className="text-center text-4xl font-bold mt-4 mb-6">Trending</h1>
                 <Slider {...settings}>
                     {trending.map((val, index) => (
-                        <div>
-                            <div className="lg:flex gap-8 items-center" key={index}>
+                        <div key={index}>
+                            <div className="lg:flex gap-8 items-center">
                                 <div className="lg:w-1/3">
                                     <img src={val.trending_img} alt="img" className="rounded-lg w-full h-full"/>
                                 </div>

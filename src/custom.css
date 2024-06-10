@@ -1,3 +1,9 @@
+:root {
+  --blue: #0e0620;
+  --white: #fff;
+  --green: #2ccf6d;
+}
+
 .slick-prev,
 .slick-next {
   top: 108%;
@@ -17,6 +23,62 @@
 .slick-next:focus {
   color: #585858;
 }
+
+svg {
+  width: 100%;
+  visibility: hidden;
+}
+.notFoundPage h1 {
+  font-size: 7.5em;
+  margin: 15px 0px;
+  font-weight:bold;
+}
+.notFoundPage h2 {
+  font-weight:bold;
+}
+
+.notFoundPage .btn {
+  z-index: 1;
+  overflow: hidden;
+  background: transparent;
+  position: relative;
+  padding: 8px 50px;
+  border-radius: 30px;
+  cursor: pointer;
+  font-size: 1em;
+  letter-spacing: 2px;
+  transition: 0.2s ease;
+  font-weight: bold;
+  margin: 5px 0px;
+}
+
+.notFoundPage .btn.green {
+  border: 4px solid var(--green);
+  color: var(--blue);
+}
+
+.notFoundPage .btn.green::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 0%;
+  height: 100%;
+  background: var(--green);
+  z-index: -1;
+  transition: 0.2s ease;
+}
+
+.notFoundPage .btn.green:hover {
+  color: var(--white);
+  background: var(--green);
+  transition: 0.2s ease;
+}
+
+.notFoundPage .btn.green:hover::before {
+  width: 100%;
+}
+
 
 @media (max-width: 768px) {
   .w-fullscreen768 {

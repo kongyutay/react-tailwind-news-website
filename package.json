@@ -8,6 +8,7 @@
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
     "autoprefixer": "^10.4.19",
+    "gsap": "^3.12.5",
     "install": "^0.13.0",
     "postcss": "^8.4.38",
     "rc-slider": "^10.6.2",

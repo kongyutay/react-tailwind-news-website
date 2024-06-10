@@ -30,7 +30,7 @@ const Header = () => {
                         </div>
 
                         <div className="uppercase text-2xl font-semibold">
-                            <h1>Megadesign</h1>
+                            <Link to={"/"}>Megadesign</Link>
                         </div>
 
                         <div className="flex gap-4">

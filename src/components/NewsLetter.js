@@ -13,7 +13,7 @@ const NewsLetter = () => {
                         </div>
 
                         <div className="w-1/4 w-fullscreen768">
-                            <button className="border px-8 py-3 w-full text-white bg-ye3llow-600 rounded-full text-base hover:bg-white hover:shadow-lg hover:text-black font-semibold">Subscribe</button>
+                            <button className="border px-8 py-3 w-full text-white bg-yellow-600 rounded-full text-base hover:bg-white hover:shadow-lg hover:text-black font-semibold">Subscribe</button>
                         </div>
                     </div>
                 </div>

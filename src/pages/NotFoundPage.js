@@ -88,7 +88,7 @@ const NotFoundPage = () => {
 
     return (
         <>
-            <main className="notFoundPage">
+            <main className="notFoundPage mt-32">
                 <div class="container mx-auto">
                     <div class="flex flex-wrap">
                         <div class="w-full md:w-1/2 self-center">
